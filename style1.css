@@ -1,0 +1,158 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7fb;
+    color: #333;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #123c69;
+    color: white;
+    padding: 18px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+header h2 {
+    font-size: 22px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd166;
+}
+
+/* Banner */
+.banner {
+    background: linear-gradient(135deg, #123c69, #2878b5);
+    color: white;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.banner h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ffd166;
+    color: #123c69;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: white;
+}
+
+/* Sections */
+section {
+    padding: 45px 5%;
+    text-align: center;
+    scroll-margin-top: 20px;
+}
+
+section h2 {
+    color: #123c69;
+    margin-bottom: 25px;
+}
+
+section p {
+    margin-bottom: 10px;
+}
+
+/* Responsive Information Cards */
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    width: 230px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px #00000015;
+    transition: transform 0.3s;
+}
+
+.card h3 {
+    color: #2878b5;
+    margin-bottom: 10px;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+/* Footer */
+footer {
+    background-color: #123c69;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .banner h1 {
+        font-size: 27px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
